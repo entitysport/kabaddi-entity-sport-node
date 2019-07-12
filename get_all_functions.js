@@ -12,9 +12,9 @@ module.exports = function (api) {
 
     get_competitions_data(cid=0,args={}, callback) {
         if(cid){
-          let path = 'competition/'+cid+'/info';
+          var path = 'competition/'+cid+'/info';
         }else{
-          let path = 'competitions';
+          var path = 'competitions';
         }
         return api.get({
             url: path,
@@ -40,9 +40,9 @@ module.exports = function (api) {
 
     get_matches_data(mid=0,args={}, callback) {
       if(mid){
-        let path = 'matches/'+mid+'/info';
+        var path = 'matches/'+mid+'/info';
       }else{
-        let path = 'matches';
+        var path = 'matches';
       }
       return api.get({
           url: path,
@@ -60,9 +60,9 @@ module.exports = function (api) {
 
     get_teams_data(tid=0,args={}, callback) {
       if(tid){
-        let path = 'team/'+tid+'/info';
+        var path = 'team/'+tid+'/info';
       }else{
-        let path = 'teams';
+        var path = 'teams';
       }
       return api.get({
           url: path,
@@ -80,9 +80,9 @@ module.exports = function (api) {
 
     get_players_data(pid=0,args={}, callback) {
       if(pid){
-        let path = 'player/'+pid+'/profile';
+        var path = 'player/'+pid+'/profile';
       }else{
-        let path = 'players';
+        var path = 'players';
       }
       return api.get({
           url: path,
