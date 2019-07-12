@@ -33,5 +33,7 @@ for get data for all teams maches call get_teams_maches(tid,args)
 for get data for all players call get_players_data(pid=0,args)
 for get data for plater profile call get_players_data(pid,args)
 
-If you do not send the id(like cid ,mid ,tid,pid) than u get all data other perticular id info.
+If you do not send the id(like cid ,mid ,tid,pid) than you get all data other perticular id info.
 args = {per_page:10 ,paged:20); where paged is which page u wana get data
+
+** important when your token is expire.than call entity.kabaddi.update_token('YOUR_API_KEY','YOUR_SECRET_KEY')
